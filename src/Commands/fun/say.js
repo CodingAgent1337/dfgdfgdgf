@@ -1,5 +1,4 @@
 const { MessageEmbed } = require("discord.js");
-const { greenlight } = require("../../JSON/colours.json")
 const Command = require("../../Structures/Command")
 
 module.exports = {
@@ -19,7 +18,7 @@ module.exports = {
 
             const embed = new MessageEmbed()
                 .setDescription(args.join(" "))
-                .setColor(greenlight);
+                .setColor("RANDOM");
             message.channel.send(embed)
         } catch (e) {
             throw e;
