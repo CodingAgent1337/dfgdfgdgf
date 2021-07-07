@@ -1,16 +1,18 @@
 const { MessageEmbed } = require("discord.js");
 const Command = require("../../Structures/Command")
 
-module.exports = {
-    config: {
-        name: "say",
-        category: "fun",
-        noalias: [''],
-        description: "It will say your input via the bot",
-        usage: "[text]",
-        accessableby: "everyone"
-    },
-    run: async(bot, message, args) => {
+module.exports = class extends Command {
+    constructor(...args) {
+        super(...args, {
+            name: "say",
+            category: "fun",
+            noalias: [''],
+            description: "It will say your input via the bot",
+            usage: "[text]",
+            accessableby: "everyone"
+    });
+}
+    async run(bot, message, args) {
         try {
             if (args.length === 0)
                 return message.channel.send("**Enter some messages!**")
