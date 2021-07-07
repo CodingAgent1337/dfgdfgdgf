@@ -20,7 +20,7 @@ module.exports = class extends Command {
             channel.setPosition(position)
             const nukeEmbed = new Discord.MessageEmbed()
                 .setColor('RED')
-                .setTitle('Channel Nuked <a:Nuke:810404780769673267>')
+                .setTitle('Channel Nuked')
                 .setDescription(`This channel has been nuked by ${message.author.tag}`)
                 .setImage('https://media2.giphy.com/media/oe33xf3B50fsc/giphy.gif')
                 .setTimestamp()
