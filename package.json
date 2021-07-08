@@ -16,6 +16,7 @@
     "moment": "^2.29.1",
     "mongoose": "^5.11.15",
     "relevant-urban": "^2.0.0",
+    "wikijs": "^6.2.1",
     "random-puppy": "^1.1.0"
   },
   "engines": {
