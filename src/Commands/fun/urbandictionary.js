@@ -1,6 +1,6 @@
 const urban = require('relevant-urban');
 const { MessageEmbed } = require('discord.js');
-const Command = require("../../Structures/command")
+const Command = require("../../Structures/Command")
 
 module.exports = class extends Command {
     constructor(...args) {
